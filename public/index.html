@@ -15,7 +15,6 @@
         <script src="assets/js/vendor/system.js"></script>
         <script src="assets/js/vendor/jquery.min.js"></script>
         <script src="assets/js/vendor/semantic.min.js"></script>
-        <script src="app.js"></script>
         <!-- 2. Configure SystemJS -->
 
         <!--<script src="systemjs.config.js"></script>-->
@@ -30,6 +29,18 @@
                 <div class="ui small loader"></div>
             </div>
         </app>
+        <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+        <script>
+            var config = {
+                apiKey: "AIzaSyCpkIy_akmUniqUJhLtYPBE1vD7At8Laj4",
+                authDomain: "echoproject-c786f.firebaseapp.com",
+                databaseURL: "https://echoproject-c786f.firebaseio.com",
+                storageBucket: "echoproject-c786f.appspot.com",
+                messagingSenderId: "839621732792"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script src="app.js"></script>
         <!--  Production mod  -->
         <script src="assets/js/bundle.min.js"></script>
     </body>
