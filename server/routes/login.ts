@@ -1,7 +1,6 @@
 import { Router, Request, Response, NextFunction } from "express";
 const loginRouter: Router = Router();
 
-var firebase = require('firebase');
 var requests = require('request');
 var http = require('http');
 
