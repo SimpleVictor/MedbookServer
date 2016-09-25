@@ -34,7 +34,7 @@ loginRouter.post("/apidata", function (request: Request, response: Response, nex
     };
 
     requests({
-        url: `https://secondecho-ad19d.firebaseio.com/.json`,
+        url: `https://mylistener-d04c4.firebaseio.com/.json`,
         method: "PATCH",
         body: myObject,
         json: true,
@@ -76,7 +76,7 @@ loginRouter.post("/patient_profile", function (request: Request, response: Respo
     };
 
     requests({
-        url: `https://mylistener-d04c4.firebaseio.com/patient_profile.json`,
+        url: `https://mylistener-d04c4.firebaseio.com/patient_profile/.json`,
         method: "PATCH",
         body: myObject,
         json: true,
@@ -104,7 +104,7 @@ loginRouter.post("/medical_time", function (request: Request, response: Response
     };
 
     requests({
-        url: `https://mylistener-d04c4.firebaseio.com/medical_time.json`,
+        url: `https://mylistener-d04c4.firebaseio.com/medical_time/.json`,
         method: "PATCH",
         body: myObject,
         json: true,
@@ -132,7 +132,7 @@ loginRouter.post("/allergies", function (request: Request, response: Response, n
     };
 
     requests({
-        url: `https://mylistener-d04c4.firebaseio.com/allergies.json`,
+        url: `https://mylistener-d04c4.firebaseio.com/allergies/.json`,
         method: "PATCH",
         body: myObject,
         json: true,
@@ -161,7 +161,7 @@ loginRouter.post("/medications", function (request: Request, response: Response,
     };
 
     requests({
-        url: `https://mylistener-d04c4.firebaseio.com/medications.json`,
+        url: `https://mylistener-d04c4.firebaseio.com/medications/.json`,
         method: "PATCH",
         body: myObject,
         json: true,
@@ -190,7 +190,7 @@ loginRouter.post("/patient_vitals", function (request: Request, response: Respon
     };
 
     requests({
-        url: `https://mylistener-d04c4.firebaseio.com/patient_vitals.json`,
+        url: `https://mylistener-d04c4.firebaseio.com/patient_vitals/.json`,
         method: "PATCH",
         body: myObject,
         json: true,
@@ -219,7 +219,7 @@ loginRouter.post("/test_results", function (request: Request, response: Response
     };
 
     requests({
-        url: `https://mylistener-d04c4.firebaseio.com/test_results.json`,
+        url: `https://mylistener-d04c4.firebaseio.com/test_results/.json`,
         method: "PATCH",
         body: myObject,
         json: true,
