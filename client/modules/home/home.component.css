@@ -1,0 +1,28 @@
+.home-container{
+    height: 100%;
+    width: 100%;
+}
+
+#alexaImg{
+    height: 10% !important;
+    position: fixed;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.ui.raised.segment{
+    top: 200px;
+}
+
+
+h1{
+    top:50%;
+    text-align: center;
+
+}
+td, th{
+    font-size: 16px;
+ }

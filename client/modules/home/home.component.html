@@ -1,1 +1,435 @@
-<h1>Heye</h1>
+<div class="home-container">
+    <img id="alexaImg" src="assets/medbook.png">
+
+
+    <div class="col-lg-6 col-centered">
+
+
+        <h1 *ngIf="false">Alexa is waiting for you</h1>
+
+
+        <div class="ui raised segment" *ngIf="patient_profile" id="data1">
+
+            <table class="ui celled selectable striped table">
+                <thead>
+                <tr class="center-aligned"><th>
+                    Patient's General Detail
+                </th>
+                </tr></thead>
+                <tbody>
+                <tr>
+                    <td class="collapsing">
+                        Patient Name
+                    </td>
+                    <td>John Doe</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Gender
+                    </td>
+                    <td>M</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Alcohol Drinker
+                    </td>
+                    <td>Yes</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Patient Adress
+                    </td>
+                    <td>162 Baltimore drive</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        DOB
+                    </td>
+                    <td>06/19/1994</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Smoker
+                    </td>
+                    <td>Yes</td>
+
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="ui raised segment" *ngIf="medical_time" id="data2">
+
+
+                <table class="ui celled selectable striped table">
+                    <thead>
+                    <tr><th>
+                        Patient's General Detail
+                    </th>
+                    </tr></thead>
+                    <tbody>
+                    <tr>
+                        <td class="collapsing">
+                            Date and Time
+                        </td>
+                        <td>Wed Sep 26 2012 18:00:00 GMT+0000 (UTC)</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Division
+                        </td>
+                        <td>Radiology</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            John Hopkin’s Medical Center
+                        </td>
+                        <td>Yes</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Reason
+                        </td>
+                        <td>Consultation</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Author
+                        </td>
+                        <td>n/a</td>
+
+                    </tr>
+                    </tbody>
+                </table>
+        </div>
+
+
+        <div class="ui raised segment" *ngIf="allergies" id="data3">
+
+            <table class="ui celled striped table">
+                <thead>
+                <tr><th colspan="1">
+                    Alergies
+                </th>
+                </tr></thead>
+                <tbody>
+                <tr>
+                    <td class="collapsing">
+                        peanut
+                    </td>
+                </tr>
+                <tr>
+
+                    <td class="collapsing">
+                        peanut
+                    </td>
+                </tr>
+                <tr>
+
+                    <td class="collapsing">
+                        peanut
+                    </td>
+                </tr>
+                <tr>
+
+                    <td class="collapsing">
+                        peanut
+                    </td>
+                </tr>
+                <tr>
+
+                    <td class="collapsing">
+                        peanut
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="ui raised segment" *ngIf="medications" id="data4">
+            <table class="ui celled selectable striped table">
+                <thead>
+                <tr class="center-aligned"><th>
+                    John Doe's Medications
+                </th>
+                </tr></thead>
+                <tbody>
+                <tr>
+                    <td class="collapsing">
+                        Drug Name
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Dosage
+                    </td>
+                    <td>string</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Provider
+                    </td>
+                    <td>string</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        NDC Code
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Route
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Provider ID
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Generic Prod. Indicator
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Frequency
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="ui raised segment" *ngIf="patient_vitals" id="data5">
+            <table class="ui celled selectable striped table">
+                <thead>
+                <tr class="center-aligned"><th>
+                    John Doe's Vitals
+                </th>
+                </tr></thead>
+                <tbody>
+                <tr>
+                    <td class="collapsing">
+                        Blood Pressure
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Blood Glucose
+                    </td>
+                    <td>string</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Body Mass Index(BMI)
+                    </td>
+                    <td>string</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Height
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Heart Rate
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Blood Oxygen
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Body Fat
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Weight
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+        <div class="ui raised segment" *ngIf="test_results" id="data6">
+            <table class="ui celled selectable striped table">
+                <thead>
+                <tr class="center-aligned"><th>
+                    John Doe's Test Results
+                </th>
+                </tr></thead>
+                <tbody>
+                <tr>
+                    <td class="collapsing">
+                        Test
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Protein
+                    </td>
+                    <td>string</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        High Value
+                    </td>
+                    <td>string</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Ordered By
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Organization
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Value
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Low Value
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Reciepient
+                    </td>
+                    <td>String</td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+    </div>
+
+
+</div>

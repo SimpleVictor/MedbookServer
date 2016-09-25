@@ -6,21 +6,25 @@
 
         <link rel="stylesheet" type="text/css" href="assets/css/semantic.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
         <!-- 1. Load libraries -->
         <!-- Polyfill(s) for older browsers -->
         <script src="assets/js/vendor/shim.min.js"></script>
         <script src="assets/js/vendor/zone.min.js"></script>
         <script src="assets/js/vendor/Reflect.js"></script>
         <script src="assets/js/vendor/system.js"></script>
+
         <script src="assets/js/vendor/jquery.min.js"></script>
+        <!--<script   src="https://code.jquery.com/ui/1.9.2/jquery-ui.min.js"   integrity="sha256-eEa1kEtgK9ZL6h60VXwDsJ2rxYCwfxi40VZ9E0XwoEA="   crossorigin="anonymous"></script>-->
         <script src="assets/js/vendor/semantic.min.js"></script>
+
         <!-- 2. Configure SystemJS -->
 
-        <!--<script src="systemjs.config.js"></script>-->
-        <!--<script>-->
-            <!--System.import('app').catch(function(err) { console.error(err); });-->
-        <!--</script>-->
+        <script src="systemjs.config.js"></script>
+        <script>
+            System.import('app').catch(function(err) { console.error(err); });
+        </script>
     </head>
 
     <body>
@@ -31,17 +35,18 @@
         </app>
         <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
         <script>
+            // Initialize Firebase
             var config = {
-                apiKey: "AIzaSyCpkIy_akmUniqUJhLtYPBE1vD7At8Laj4",
-                authDomain: "echoproject-c786f.firebaseapp.com",
-                databaseURL: "https://echoproject-c786f.firebaseio.com",
-                storageBucket: "echoproject-c786f.appspot.com",
-                messagingSenderId: "839621732792"
+                apiKey: "AIzaSyCM47exx5dzuEbbrpHP-qo_x8Dy3mB-mtU",
+                authDomain: "mylistener-d04c4.firebaseapp.com",
+                databaseURL: "https://mylistener-d04c4.firebaseio.com",
+                storageBucket: "mylistener-d04c4.appspot.com",
+                messagingSenderId: "323919320180"
             };
             firebase.initializeApp(config);
         </script>
         <script src="app.js"></script>
         <!--  Production mod  -->
-        <script src="assets/js/bundle.min.js"></script>
+        <!--<script src="assets/js/bundle.min.js"></script>-->
     </body>
 </html>

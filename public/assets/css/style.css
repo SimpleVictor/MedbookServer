@@ -1,10 +1,9 @@
-body {
-	background: #f4f4f4;
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Baloo Bhaina', cursive;
 }
-.center {
-	text-align: center;
-	padding-top: 100px;
-}
-.sebm-google-map-container {
-	height: 300px;
-}
+
+
+
+

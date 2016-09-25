@@ -1,37 +1,17 @@
-function patient_(firstName, lastName, age, sex, dob, phoneNumber, address, blood_type, condition, date_arrived, room_number) {
-    var num = Math.floor(Math.random()*9000) + 10000;;
-
-    var obj = {
-            firstName: firstName,
-            lastname: lastName,
-            age: age,
-            sex: sex,
-            address: address,
-            phoneNumber: phoneNumber,
-            blood_type: blood_type,
-        condition: condition,
-        data_arrived: date_arrived,
-        room_number : room_number
-        };
-
-
-    return obj
-
-
-}
-
-
-
-
-
-firebase.database().ref("patient_report/"+Math.round(Math.random()*9999)).set(patient_("Alexa",
-    "Smith",
-    "18",
-    "F",
-    "September 12 1998",
-    "+19089308704",
-    "123 redbull drive, New York",
-    "B-",
-    "stable",
-    Date.now(),
-    "43A"));
+// firebase.database().ref('employees/'+Math.floor((Math.random()*90000) + 10000)).set({
+//     name: "Doctor Roberto",
+//     clocked_in: "false",
+//     totalHours: 56.23,
+//     rounds_for_today: 23,
+//     profile_picture : "img.jpg"
+// });
+//
+// firebase.database().ref('patient_report/'+Math.floor((Math.random()*90000) + 10000)).set({
+//     age: "21",
+//     name: "Jesscia Garcia",
+//     email: "jgarcia@gmail.com",
+//     blood_type: "B+",
+//     img_url: "jpg.img",
+//     condition: "Lost an arm",
+//     room_number: "23L"
+// });
